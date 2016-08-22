@@ -11,16 +11,19 @@ var cells = [document.getElementById('one'),
   document.getElementById('eight'),
   document.getElementById('nine'),
 ];
-// console.log(cells);
+
 
 document.getElementById('one').addEventListener('click', function() {
   if ((document.getElementById('one').innerHTML === "") && (player === 1)) {
   document.getElementById('one').innerHTML = "X";
   player = 0;
-  console.log("this is after X " + player);
+  checkwin();
+  // stopgame();
 } else if ((document.getElementById('one').innerHTML === "") && (player === 0)) {
   document.getElementById('one').innerHTML = "O";
   player = 1;
+  checkwin();
+  // stopgame();
   }
 })
 
@@ -28,10 +31,13 @@ document.getElementById('two').addEventListener('click', function() {
   if ((document.getElementById('two').innerHTML === "") && (player === 1)) {
   document.getElementById('two').innerHTML = "X";
   player = 0;
-  console.log("this is after X" + player);
+  checkwin();
+  // stopgame();
 } else if ((document.getElementById('two').innerHTML === "") && (player === 0)) {
   document.getElementById('two').innerHTML = "O";
   player = 1;
+  checkwin();
+  // stopgame();
   }
 })
 
@@ -40,10 +46,13 @@ document.getElementById('three').addEventListener('click', function() {
   if ((document.getElementById('three').innerHTML === "") && (player === 1)) {
   document.getElementById('three').innerHTML = "X";
   player = 0;
-  console.log("this is after X " + player);
+  checkwin();
+  // stopgame();
 } else if ((document.getElementById('three').innerHTML === "") && (player === 0)) {
   document.getElementById('three').innerHTML = "O";
   player = 1;
+  checkwin();
+  // stopgame();
   }
 })
 
@@ -52,10 +61,13 @@ document.getElementById('four').addEventListener('click', function() {
   if ((document.getElementById('four').innerHTML === "") && (player === 1)) {
   document.getElementById('four').innerHTML = "X";
   player = 0;
-  console.log("this is after X " + player);
+  checkwin();
+  // stopgame();
 } else if ((document.getElementById('four').innerHTML === "") && (player === 0)) {
   document.getElementById('four').innerHTML = "O";
   player = 1;
+  checkwin();
+  // stopgame();
   }
 })
 
@@ -64,151 +76,290 @@ document.getElementById('five').addEventListener('click', function() {
   if ((document.getElementById('five').innerHTML === "") && (player === 1)) {
   document.getElementById('five').innerHTML = "X";
   player = 0;
-  console.log("this is after X " + player);
+  checkwin();
+  // stopgame();
 } else if ((document.getElementById('five').innerHTML === "") && (player === 0)) {
   document.getElementById('five').innerHTML = "O";
   player = 1;
+  checkwin();
+  // stopgame();
   }
 })
-
 
 document.getElementById('six').addEventListener('click', function() {
   if ((document.getElementById('six').innerHTML === "") && (player === 1)) {
   document.getElementById('six').innerHTML = "X";
   player = 0;
-  console.log("this is after X " + player);
+  checkwin();
+  // stopgame();
 } else if ((document.getElementById('six').innerHTML === "") && (player === 0)) {
   document.getElementById('six').innerHTML = "O";
   player = 1;
+  checkwin();
+  // stopgame();
   }
 })
-
 
 document.getElementById('seven').addEventListener('click', function() {
   if ((document.getElementById('seven').innerHTML === "") && (player === 1)) {
   document.getElementById('seven').innerHTML = "X";
   player = 0;
-  console.log("this is after X " + player);
+  checkwin();
+  // stopgame();
 } else if ((document.getElementById('seven').innerHTML === "") && (player === 0)) {
   document.getElementById('seven').innerHTML = "O";
   player = 1;
+  checkwin();
+  // stopgame();
   }
 })
-
 
 document.getElementById('eight').addEventListener('click', function() {
   if ((document.getElementById('eight').innerHTML === "") && (player === 1)) {
   document.getElementById('eight').innerHTML = "X";
   player = 0;
-  console.log("this is after X " + player);
+  checkwin();
+  // stopgame();
 } else if ((document.getElementById('eight').innerHTML === "") && (player === 0)) {
   document.getElementById('eight').innerHTML = "O";
   player = 1;
+  checkwin();
+  // stopgame();
   }
 })
-
 
 document.getElementById('nine').addEventListener('click', function() {
   if ((document.getElementById('nine').innerHTML === "") && (player === 1)) {
   document.getElementById('nine').innerHTML = "X";
   player = 0;
-  console.log("this is after X " + player);
-} else if ((document.getElementById('nine').innerHTML === "") && (player === 0)) {
+  checkwin();
+  // stopgame();
+  } else if ((document.getElementById('nine').innerHTML === "") && (player === 0)) {
   document.getElementById('nine').innerHTML = "O";
   player = 1;
+  checkwin();
+  // stopgame();
   }
 })
 
 
-
-document.getElementById('reset').addEventListener('click', function() {
-  location.reload(true)}
-
-
 //
-//
-// var p1 = 1;
-// function display_input(cells){
-//     if ( p1 == 1 ){
-//         document.getElementById(cells).innerHTML = "X";
-//         p1 = 0;
-//     } else {
-//         document.getElementById(cells).innerHTML = "O";
-//         p1 = 1;
-//     }
-// }
-//
-//
-// function xOrO () {
-//
-//   document.getElementById('one').innerHTML = 'X'
-// }
-//
-
-//
-//   for (var i = 0; i < cells.length; i++) {
-//     if (document.getElementById(cell.i).innerHTML = "X") {
-//         return 0
-//     } else {
-//       (document.getElementById(cell.i).innerHTML = "O")
-//     }
+// function checkwin1() {
+//   if (
+//     ((document.getElementById('one').innerHTML === "X") && (document.getElementById('two').innerHTML === "X") &&
+//     (document.getElementById('three').innerHTML === "X")) ||
+//     ((document.getElementById('one').innerHTML === "0") && (document.getElementById('two').innerHTML === "0") &&
+//     (document.getElementById('three').innerHTML === "0"))
+//   ) {
+//     document.getElementById('header').innerHTML = "We have a winner!";
 //   }
 // }
-//
-//
-//
-// function favchoc(bitter) {
-//    if (bitter > 7) {
-//    return 0
-//  } else if (bitter > 5) {
-//    return 1
-//  } else if (bitter > 3) {
-//    return 2
-//    } else {
-//    return 3
-//    }
-// }
-//
-// switch (favchoc(bitter)) {
-//   case 0:
-//    console.log("your favourite chocolate is likely to be dark");
-//    break;
-//   case 1:
-//    console.log("your favourite chocolate is likely to be dark milk");
-//    break;
-//   case 2:
-//    console.log("your favourite chocolate is likely to be milk");
-//    break;
-//   case 3:
-//    console.log("your favourite chocolate is likely to be white");
-//    break;
-// }
+
+
+function checkwin() {
+    checkwin1x();
+    checkwin1o();
+    checkwin2x();
+    checkwin2o();
+    checkwin3x();
+    checkwin3o();
+    checkwin4x();
+    checkwin4o();
+    checkwin5x();
+    checkwin5o();
+    checkwin6x();
+    checkwin6o();
+    checkwin7x();
+    checkwin7o();
+    checkwin8x();
+    checkwin8o();
+}
+
+
+function checkwin1x() {
+  if (
+    (document.getElementById('one').innerHTML === "X") &&
+    (document.getElementById('two').innerHTML === "X") &&
+    (document.getElementById('three').innerHTML === "X")
+  ) {
+    window.alert("X wins! Game Over!")
+  }
+}
+
+function checkwin1o() {
+  if (
+    (document.getElementById('one').innerHTML === "O") &&
+    (document.getElementById('two').innerHTML === "O") &&
+    (document.getElementById('three').innerHTML === "O")
+  ) {
+    window.alert("O wins! Game Over!")
+  }
+}
+
+
+function checkwin2x() {
+  if (
+    (document.getElementById('four').innerHTML === "X") &&
+    (document.getElementById('five').innerHTML === "X") &&
+    (document.getElementById('six').innerHTML === "X")
+  ) {
+    window.alert("X wins! Game Over!")
+  }
+}
+
+function checkwin2o() {
+  if (
+    (document.getElementById('four').innerHTML === "O") &&
+    (document.getElementById('five').innerHTML === "O") &&
+    (document.getElementById('six').innerHTML === "O")
+  ) {
+    window.alert("O wins! Game Over!")
+  }
+}
+
+
+function checkwin3x() {
+  if (
+    (document.getElementById('seven').innerHTML === "X") &&
+    (document.getElementById('eight').innerHTML === "X") &&
+    (document.getElementById('nine').innerHTML === "X")
+  ) {
+    window.alert("X wins! Game Over!")
+  }
+}
+
+function checkwin3o() {
+  if (
+    (document.getElementById('seven').innerHTML === "O") &&
+    (document.getElementById('eight').innerHTML === "O") &&
+    (document.getElementById('nine').innerHTML === "O")
+  ) {
+    window.alert("O wins! Game Over!")
+  }
+}
+
+function checkwin4x() {
+  if (
+    (document.getElementById('one').innerHTML === "X") &&
+    (document.getElementById('four').innerHTML === "X") &&
+    (document.getElementById('seven').innerHTML === "X")
+  ) {
+    window.alert("X wins! Game Over!")
+  }
+}
+
+
+function checkwin4o() {
+  if (
+    (document.getElementById('one').innerHTML === "O") &&
+    (document.getElementById('four').innerHTML === "O") &&
+    (document.getElementById('seven').innerHTML === "O")
+  ) {
+    window.alert("O wins! Game Over!")
+  }
+}
+
+
+function checkwin5x() {
+  if (
+    (document.getElementById('two').innerHTML === "X") &&
+    (document.getElementById('five').innerHTML === "X") &&
+    (document.getElementById('eight').innerHTML === "X")
+  ) {
+    window.alert("X wins! Game Over!")
+  }
+}
+
+
+function checkwin5o() {
+  if (
+    (document.getElementById('two').innerHTML === "O") &&
+    (document.getElementById('five').innerHTML === "O") &&
+    (document.getElementById('eight').innerHTML === "O")
+  ) {
+    window.alert("O wins! Game Over!")
+  }
+}
+
+function checkwin6x() {
+  if (
+    (document.getElementById('three').innerHTML === "X") &&
+    (document.getElementById('six').innerHTML === "X") &&
+    (document.getElementById('nine').innerHTML === "X")
+  ) {
+    window.alert("X wins! Game Over!")
+  }
+}
+
+
+function checkwin6o() {
+  if (
+    (document.getElementById('three').innerHTML === "O") &&
+    (document.getElementById('six').innerHTML === "O") &&
+    (document.getElementById('nine').innerHTML === "O")
+  ) {
+    window.alert("O wins! Game Over!")
+  }
+}
+
+
+function checkwin7x() {
+  if (
+    (document.getElementById('one').innerHTML === "X") &&
+    (document.getElementById('five').innerHTML === "X") &&
+    (document.getElementById('nine').innerHTML === "X")
+  ) {
+    window.alert("X wins! Game Over!")
+  }
+}
+
+
+function checkwin7o() {
+  if (
+    (document.getElementById('one').innerHTML === "O") &&
+    (document.getElementById('five').innerHTML === "O") &&
+    (document.getElementById('nine').innerHTML === "O")
+  ) {
+    window.alert("O wins! Game Over!")
+  }
+}
+
+
+function checkwin8x() {
+  if (
+    (document.getElementById('three').innerHTML === "X") &&
+    (document.getElementById('five').innerHTML === "X") &&
+    (document.getElementById('seven').innerHTML === "X")
+  ) {
+    window.alert("X wins! Game Over!")
+  }
+}
+
+
+function checkwin8o() {
+  if (
+    (document.getElementById('three').innerHTML === "O") &&
+    (document.getElementById('five').innerHTML === "O") &&
+    (document.getElementById('seven').innerHTML === "O")
+  ) {
+    window.alert("O wins! Game Over!")
+  }
+}
 
 
 //
-//   if (true) {
-//
-//   }return true
+// function checkwin1o() {
+//   if (
+//     (document.getElementById('one').innerHTML === "O") &&
+//     (document.getElementById('two').innerHTML === "O") &&
+//     (document.getElementById('three').innerHTML === "O")
+//   ) {
+//     document.getElementById('header').innerHTML = "O wins!";
+//   }
 // }
 
 
-//
-// document.getElementById('one').addEventListener('click', function() {
-//   document.getElementById('one').style.background = 'goldenrod'
-// })
-//
-//
-// function inputOne() {
-//   if (document.getElementById('one').value = "") {
-//   document.getElementById('one').innerHTML = <p>"X"</p>;
-//   // } else if (document.getElementById('one').value = "") {
-//   // document.getElementById('one').innerHTML = "X";
-//   // }
-// }
-//
 
-//
-// if((Type == 2 && PageCount == 0) || (Type == 2 && PageCount == '')) {
-//
-//         PageCount= document.getElementById('<%=hfPageCount.ClientID %>').value;
-// }
+function reset(){
+    window.location.reload();
+}
